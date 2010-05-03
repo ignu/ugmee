@@ -12,11 +12,7 @@ describe "MeetingsController" do
   describe "with upcoming meeting" do
     before(:each) do
       Timecop.freeze Time.local(2010, 5, 2)
-      @meeting = Meeting.new
-      @meeting.topic = "Autbot Reunion"
-      @meeting.date = Chronic.parse("Next Wednesday")
-      @meeting.description = "Autbot Reunion is a fun time"
-#, :description="Cool Times", :date=>Chronic.parse("Next Wednesday")
+      @meeting = Meeting.new :topic=> "Autobot Reunion", :description="Cool Times", :date=>Chronic.parse("Next Wednesday")
 
     end
 
