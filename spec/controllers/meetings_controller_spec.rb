@@ -8,9 +8,20 @@ describe "MeetingsController" do
   it "returns hello world" do
     last_response.body.should include "Next Meeting"
   end
+
   describe "with upcoming meeting" do
+    before(:each) do
+      Timecop.freeze Time.local(2010, 5, 2)
+      @meeting = Meeting.new
+      @meeting.topic = "Autbot Reunion"
+      @meeting.date = Chronic.parse("Next Wednesday")
+      @meeting.description = "Autbot Reunion is a fun time"
+#, :description="Cool Times", :date=>Chronic.parse("Next Wednesday")
+
+    end
+
     it "should display the next month's meeting" do
-      
+      last_response.body.should include "Autobot Reunion"
     end
   end
 end
