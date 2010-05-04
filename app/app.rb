@@ -1,4 +1,4 @@
-class Aadnd < Padrino::Application
+class Ugmee < Padrino::Application
   configure do
     ##
     # Application-specific configuration options

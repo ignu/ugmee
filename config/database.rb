@@ -13,3 +13,7 @@ case Padrino.env
   when :production  then DataMapper.setup(:default, "sqlite3://" + Padrino.root('db', "production.db"))
   when :test        then DataMapper.setup(:default, "sqlite3://" + Padrino.root('db', "test.db"))
 end
+
+
+DataMapper.auto_upgrade!
+
