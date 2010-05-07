@@ -11,6 +11,7 @@ gem 'data_objects'
 gem 'do_sqlite3'
 gem 'datamapper'
 gem 'chronic'
+gem 'compass'
 
 # Test requirements
 gem 'rspec', :require => "spec", :group => "test"

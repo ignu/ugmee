@@ -1,6 +1,5 @@
-production:
 development:
-  name: Adult Dinobot Education
+  name: Adult Education
   when: 2nd Wednesday of Every Month
   twitter: starscreaam
   twitter_password: megatronnn

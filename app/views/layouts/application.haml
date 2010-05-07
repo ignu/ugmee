@@ -1,0 +1,14 @@
+!!!
+%head
+  %title= @title || APP_CONFIG["name"]
+  %script{:src=>"http://html5shiv.googlecode.com/svn/trunk/html5.js", :type=>'text/javascript'}
+%body
+  .content
+    #logo
+      &nbsp;
+    .header
+      =@title || APP_CONFIG["name"]
+      %link{:href => '/stylesheets/reset.css', :rel => 'stylesheet', :type => 'text/css'}
+      %link{:href => '/stylesheets/application.css', :rel => 'stylesheet', :type => 'text/css'}
+    .body
+      =yield

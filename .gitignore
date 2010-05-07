@@ -4,6 +4,7 @@ TAGS
 *.swp
 *.orig
 .idea
+application.css
 *.db
 log
 .sqlite
