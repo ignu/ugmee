@@ -1,14 +1,17 @@
 .group
   =f.label :topic
-  =f.error_message_on :topic
+  .field
+    =f.error_message_on :topic
   =f.text_field :topic, :class => :text_field
 .group
   =f.label :description
-  =f.error_message_on :description
+  .field
+    =f.error_message_on :description
   =f.text_area :description, :class => :text_field
 .group
   =f.label :date
-  =f.error_message_on :date
+  .field
+    =f.error_message_on :date
   =f.text_field :date, :class => :text_field
 
 .group.navform.wat-cf

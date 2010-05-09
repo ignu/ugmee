@@ -99,7 +99,9 @@ hr {
   letter-spacing: -1px;
   line-height: 1.2em;
 }
-
+.form textarea { 
+  height: 200px;
+}
 #main .block .content p {
   font-size: 13px;
   font-style: normal;
@@ -257,7 +259,7 @@ hr {
   color: #666666;
 }
 
-.form input.text_field, .form input.password_field, .form textarea.text_area {
+.form input.text_field, .form textarea, .form input.password_field, .form textarea.text_area {
   width: 100%;
   border: 1px solid #cfcfcf;
 }
