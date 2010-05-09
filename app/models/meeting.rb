@@ -19,6 +19,6 @@ class Meeting
   # property <name>, <type>
   property :id, Serial
   property :topic, String
-  property :description, String
+  property :description, Text
   property :date, DateTime
 end

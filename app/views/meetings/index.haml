@@ -1,8 +1,8 @@
-%h1 Next Meeting
+%h1
+  -if(@next_meeting.nil?)
+    Topic: TBD
+  -else
+    =@next_meeting.topic
 .date
   =Meeting.next
--if(@next_meeting.nil?)
-  "Topic: TBD"
--else
-  =@next_meeting.topic
 

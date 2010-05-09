@@ -1,0 +1,4 @@
+%h1
+  New
+-form_for :meeting, url(:meetings, :create), :class=>:form do |f|
+  =partial "meetings/form", :locals => { :f => f }

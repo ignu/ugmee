@@ -1,0 +1,16 @@
+.block
+  .secondary-navigation
+    %ul.wat-cf
+      %li.first=link_to pat(:list), url(:meetings, :index)
+      %li=link_to pat(:new), url(:meetings, :new)
+      %li.active=link_to pat(:edit), url(:meetings, :edit, :id => @meeting.id)
+  .content
+    %h2.title
+      =pat(:edit)
+      =mt(:meeting)
+    .inner
+      -form_for :meeting, url(:meetings, :update, :id => @meeting.id), :method => :put, :class => :form do |f|
+        =partial "meetings/form", :locals => { :f => f }
+
+-content_for :sidebar, partial("base/sidebar")
+
