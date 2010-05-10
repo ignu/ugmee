@@ -1,8 +1,10 @@
-%h1
-  -if(@next_meeting.nil?)
-    Topic: TBD
-  -else
-    =@next_meeting.topic
+-if(@next_meeting.nil?)
+  %h1 Topic: TBD
+-else
+  %h1.topic=@next_meeting.topic
+  .description
+    =simple_format @next_meeting.description
 .date
-  =Meeting.next
+  ="#{@next_meeting.date.strftime("%B %d")}, #{Meeting.time}" 
+
 
